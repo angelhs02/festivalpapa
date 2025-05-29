@@ -199,9 +199,31 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuButton = document.getElementById('menuButton');
             const mobileMenu = document.querySelector('.mobile-menu');
+            const headerInfoBtn = document.querySelector('.navbar .info-btn');
             
             menuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('active');
+            });
+
+            // Cerrar menú al hacer clic en cualquier enlace o botón dentro del menú móvil
+            const mobileMenuContent = document.querySelector('.mobile-menu-content');
+            mobileMenuContent.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+
+            // Cerrar menú si el botón "Más información" del header es clickeado (en modo móvil)
+            headerInfoBtn.addEventListener('click', function(e) {
+                // Solo intervenir si el menú móvil está abierto
+                if (mobileMenu.classList.contains('active')) {
+                    e.preventDefault();
+                    mobileMenu.classList.remove('active');
+                    setTimeout(function() {
+                        window.open('https://m.facebook.com/RADIOUNHEVAL/photos/-vuelve-la-feria-m%C3%A1s-esperada-la-universidad-nacional-hermilio-valdiz%C3%A1n-a-trav%C3%A9s/1355540162584468/', '_blank');
+                    }, 200); // Espera breve para animación de cierre
+                }
+                // Si el menú móvil no está abierto, dejar que el onclick original funcione
             });
         });
     </script>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocosh - Papas Huanuqueñas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body class="body-bg">
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logo_sis.png" alt="Papas Huanuqueñas" class="logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="index.html#importancia">Importancia</a>
+                    <a href="index.html#variedades">Variedades Nativas</a>
+                    <a href="index.html#platos">Platos preparados</a>
+                </div>
+                <button class="info-btn" onclick="window.open('https://m.facebook.com/RADIOUNHEVAL/photos/-vuelve-la-feria-m%C3%A1s-esperada-la-universidad-nacional-hermilio-valdiz%C3%A1n-a-trav%C3%A9s/1355540162584468/', '_blank')">
+                    Más información
+                </button>
+                <button class="menu-btn" id="menuButton">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="mobile-menu-content">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#importancia">Importancia</a>
+                <a href="index.html#variedades">Variedades Nativas</a>
+                <a href="index.html#platos">Platos preparados</a>
+                <button class="info-btn w-full">
+                    Más información
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section-white">
+            <div class="container">
+                <div class="grid-2" style="align-items: flex-start;">
+                    <div>
+                        <img src="img/tocosh.jpg" alt="Tocosh" class="img-rounded-shadow" style="max-width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                    </div>
+                    <div>
+                        <h1 class="section-title" style="text-align:left;">Tocosh</h1>
+                        <h2 class="mb-6" style="font-size:1.3rem; color:#8B4513;">Ingredientes</h2>
+                        <ul class="list-space" style="margin-bottom:24px;">
+                            <li>• 1 kg de tocosh (papa fermentada)</li>
+                            <li>• 1 litro de agua</li>
+                            <li>• Azúcar o miel al gusto</li>
+                            <li>• Queso fresco (opcional)</li>
+                            <li>• Canela y clavo de olor (opcional)</li>
+                        </ul>
+                        <h2 class="mb-6" style="font-size:1.3rem; color:#8B4513;">Preparación</h2>
+                        <ol class="list-space" style="list-style:decimal inside;">
+                            <li>Lava bien el tocosh para quitar el exceso de fermentación.</li>
+                            <li>Coloca el tocosh en una olla con agua y cocina a fuego medio hasta que esté suave.</li>
+                            <li>Agrega azúcar o miel al gusto. Si deseas, añade canela y clavo de olor para aromatizar.</li>
+                            <li>Sirve caliente, acompañado de queso fresco si lo prefieres.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; Equipo alfa buena maravilla onda dinamita escuadron lobo vs Abuelitas en Patines. <br> Angel Huacal Silva.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('menuButton');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

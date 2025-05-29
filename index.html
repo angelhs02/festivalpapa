@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papas Huanuqueñas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .slide {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+
+</head>
+<body class="body-bg">
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="#" class="logo">
+                    <img src="img/logo_sis.png" alt="Papas Huanuqueñas" class="logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="#importancia">Importancia</a>
+                    <a href="#variedades">Variedades Nativas</a>
+                    <a href="#platos">Platos preparados</a>
+                </div>
+                <button class="info-btn" onclick="window.open('https://m.facebook.com/RADIOUNHEVAL/photos/-vuelve-la-feria-m%C3%A1s-esperada-la-universidad-nacional-hermilio-valdiz%C3%A1n-a-trav%C3%A9s/1355540162584468/', '_blank')">
+                    Más información
+                </button>
+                <button class="menu-btn" id="menuButton">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="mobile-menu-content">
+                <a href="index.html">Inicio</a>
+                <a href="#importancia">Importancia</a>
+                <a href="#variedades">Variedades Nativas</a>
+                <a href="#platos">Platos preparados</a>
+                <button class="info-btn w-full">
+                    Más información
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section" style="background-image: url('img/cosecha1.jpg');">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>¡Lo huanuqueño primero!</h1>
+                    <p>En el marco del Día Mundial de la Papa, celebramos la riqueza de nuestras papas huanuqueñas, herencia viva de los Andes. Estas variedades nativas, llenas de sabor y tradición, serán las protagonistas en la preparación de exquisitos platos que resaltan nuestra identidad y cultura gastronómica.</p>
+                    <div class="hero-date">
+                        <span>30 de Mayo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-white" id="variedades">
+            <div class="container">
+                <h2 class="section-title">Variedades Huanuqueñas Nativas</h2>
+                <div class="slider-wrapper">
+                    <div class="slider-overflow" id="nativeSlider">
+                        <div class="slider-flex">
+                            <div class="slider-card">
+                                <img src="img/amarilla.jpg" alt="Papa Amarilla" class="slider-img">
+                                <h3 class="slider-card-title">Amarilla Huanuqueña</h3>
+                                <p class="slider-card-desc"><strong>Ideal para:</strong> Puré, causa</p>
+                                <ul class="slider-card-list">
+                                    <li>De pulpa amarilla intensa</li>
+                                    <li>Textura cremosa</li>
+                                    <li>Sabor mantecoso</li>
+                                </ul>
+                            </div>
+
+                            <div class="slider-card">
+                                <img src="img/huayro.jpg" alt="Papa Huayro" class="slider-img">
+                                <h3 class="slider-card-title">Huayro</h3>
+                                <p class="slider-card-desc"><strong>Ideal para:</strong> Pachamanca</p>
+                                <ul class="slider-card-list">
+                                    <li>Firme</li>
+                                    <li>Harinosa</li>
+                                    <li>Con sabor intenso</li>
+                                </ul>
+                            </div>
+
+                            <div class="slider-card">
+                                <img src="img/peruanita.png" alt="Papa Peruanita" class="slider-img">
+                                <h3 class="slider-card-title">Peruanita</h3>
+                                <p class="slider-card-desc"><strong>Ideal para:</strong> Horneado, frituras</p>
+                                <ul class="slider-card-list">
+                                    <li>Piel bicolor (roja y amarilla)</li>
+                                    <li>Sabor delicado</li>
+                                </ul>
+                            </div>
+
+                            <div class="slider-card">
+                                <img src="img/negrahq.webp" alt="Papa Cceccorani (Negra)" class="slider-img">
+                                <h3 class="slider-card-title">Cceccorani (Negra)</h3>
+                                <p class="slider-card-desc"><strong>Ideal para:</strong> Cocida, guisos tradicionales, chuño.</p>
+                                <ul class="slider-card-list">
+                                    <li>Piel y carne de color morado oscuro</li>
+                                    <li>Textura harinosa</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="slider-btn slider-btn-left" id="prevNative">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <button class="slider-btn slider-btn-right" id="nextNative">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-beige" id="importancia">
+            <div class="container">
+                <div class="grid-2">
+                    <div>
+                        <img src="img/1.png" alt="Importancia Cultural" class="img-rounded-shadow">
+                    </div>
+                    <div>
+                        <h2 class="section-title mb-6">Importancia Cultural y Nutricional</h2>
+                        <ul class="list-space">
+                            <li class="list-flex">
+                                <span class="list-icon">
+                                    <i class="ri-check-line"></i>
+                                </span>
+                                <p>Patrimonio cultural de Huánuco con más de 5000 años de historia</p>
+                            </li>
+                            <li class="list-flex">
+                                <span class="list-icon">
+                                    <i class="ri-check-line"></i>
+                                </span>
+                                <p>Rica fuente de carbohidratos complejos y vitamina C</p>
+                            </li>
+                            <li class="list-flex">
+                                <span class="list-icon">
+                                    <i class="ri-check-line"></i>
+                                </span>
+                                <p>Base de la economía local y sustento de miles de familias</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-white" id="platos">
+            <div class="container">
+                <h2 class="section-title text-center mb-12">Platos que preparamos a base de papas</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <img src="img/causa.jpg" alt="Causa Rellena" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Causa roja con atún</h3>
+                            <p class="card-desc">Delicioso plato frío de papa prensada rellena con atún, beterraga y verduras.</p>
+                            <button class="info-btn" onclick="window.location.href='causa.html'">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/keke.webp" alt="Keke de Papa" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Keke de Papa</h3>
+                            <p class="card-desc">Innovador postre que combina la suavidad de la papa con el dulzor del bizcocho.</p>
+                            <button class="info-btn" onclick="window.location.href='keke.html'">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/tocosh.jpg" alt="Tocosh" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Tocosh</h3>
+                            <p class="card-desc">Ancestral preparación fermentada de papa con propiedades medicinales.</p>
+                            <button class="info-btn" onclick="window.location.href='tocosh.html'">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; Equipo alfa buena maravilla onda dinamita escuadron lobo vs Abuelitas en Patines. <br> Angel Huacal Silva.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('menuButton');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('nativeSlider').firstElementChild;
+            const slides = slider.children;
+            let currentIndex = 0;
+
+            function getVisibleCards() {
+                const width = window.innerWidth;
+                if (width >= 1366) return 4;
+                if (width >= 1100) return 3;
+                if (width >= 750) return 2;
+                return 1;
+            }
+
+            function getSlideWidth() {
+                // El ancho de la tarjeta más el gap (24px)
+                if (slides.length === 0) return 0;
+                return slides[0].offsetWidth + 24;
+            }
+
+            function updateSliderPosition() {
+                const visible = getVisibleCards();
+                const maxIndex = Math.max(0, slides.length - visible);
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+                slider.style.transform = `translateX(-${currentIndex * getSlideWidth()}px)`;
+            }
+
+            document.getElementById('prevNative').addEventListener('click', () => {
+                currentIndex = Math.max(currentIndex - 1, 0);
+                updateSliderPosition();
+            });
+
+            document.getElementById('nextNative').addEventListener('click', () => {
+                const visible = getVisibleCards();
+                const maxIndex = Math.max(0, slides.length - visible);
+                currentIndex = Math.min(currentIndex + 1, maxIndex);
+                updateSliderPosition();
+            });
+
+            window.addEventListener('resize', updateSliderPosition);
+            updateSliderPosition();
+        });
+    </script>
+</body>
+</html>
